@@ -142,4 +142,22 @@ Those attributes, which can be formed by the nesting of composite and multi-valu
 Ans.
 ### 11 What are different types of entities. Differentiate between them. 
 ### 12.Differentiate between file system and database system.
+Ans. 
+| Basis |	File System | DBMS |
+| ---- | ---- | ---- |
+| Structure |	The file system is software that manages and organizes the files in a storage medium within a computer.|	DBMS is software for managing the database.|
+| Data Redundancy |	Redundant data can be present in a file system.	|In DBMS there is no redundant data. |
+| Backup and Recovery |	It doesn’t provide backup and recovery of data if it is lost. |It provides backup and recovery of data even if it is lost. |
+| Query processing |	There is no efficient query processing in the file system. |	Efficient query processing is there in DBMS.|
+| Consistency	| There is less data consistency in the file system. |	There is more data consistency because of the process of normalization. |
+| Complexity | It is less complex as compared to DBMS. |	It has more complexity in handling as compared to the file system.|
+| Security Constraints |	File systems provide less security in comparison to DBMS. |	DBMS has more security mechanisms as compared to file systems.|
+| Cost | It is less expensive than DBMS. |	It has a comparatively higher cost than a file system.|
+| Data Independence|	There is no data independence. | In DBMS data independence exists.|
+
 ### 13.What do you mean by data abstraction and data independence in DBMS.
+Ans. Database systems comprise complex data-structures. In order to make the system efficient in terms of retrieval of data, and reduce complexity in terms of usability of users, developers use abstraction i.e. hide irrelevant details from the users. This approach simplifies database design. 
+
+There are mainly 3 levels of data abstraction: 
+
+Physical: This is the lowest level of data abstraction. It tells us how the data is actually stored in memory.
