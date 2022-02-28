@@ -1,8 +1,12 @@
 # AOA IAE1 SEM IV
-
 ## Question Bank Solutions.
-### 1. List and explain various methods to solve recurrences.
+```
+All the answers of the question banks. If you think there is some error and something needs to be changed. 
+Feel free to submit your pull requests to this repo. We will check and then merge appropriate pull requests.
+```
+<br>
 
+### 1. List and explain various methods to solve recurrences.
 Ans: Here are four methods for solving Recurrence:
 a-Substitution Method
 b-Iteration Method
@@ -162,4 +166,23 @@ Following are the commonly used asymptotic notations to calculate the running ti
 Ans. 
 
 ### 18. Using Master Theorem calculate time complexity of
-a. T[n]=2T[n/2] + n
+> a. T[n]=2T[n/2] + n
+> b. T[n]=4T[n/2] + n2 
+> c. T[n]=2T[n/2] + n3 
+> d. T[n]=T[n-1]+1
+Ans. 
+### 19. Write an Algorithm for finding out the maximum and minimum number in the array using divide and conquer.
+Ans.
+### 20. Analyze merge sort and apply it to get ascending order of an array X=(5,2,4,7,1,3,2,6)
+Ans.
+### 21. Analyze quick sort Algorithm and apply it to get ascending order of an Array X=(5,2,4,7,1,3,2,6)
+Ans.
+### 22. Explain with an example of how divide and conquer strategy is used in binary search?
+Ans.
+### 23. Arrange the following time functions in ascending order :n, 2n , log(n), n3 ,n2 , n log(n)
+Ans.
+### 24. Compute complexities using O(Big_oh) ,omega and theta notation, for the function 
+> a) T[n]=5 
+> b) T[n]=10 n2+2n+5
+> c) T[n]=2T[n/2] + n3 d) T[n]=T[n-1]+1
+Ans.
