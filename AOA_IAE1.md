@@ -141,7 +141,22 @@ The time complexity of the binary search algorithm is O(log n). The best-case ti
 Ans. 
 
 ### 16. What is asymptotic analysis?
-Ans. 
+Ans. Asymptotic analysis refers to computing the running time of any operation in mathematical units of computation. For example, the running time of one operation is computed as f(n) and may be for another operation it is computed as g(n2). This means the first operation running time will increase linearly with the increase in n and the running time of the second operation will increase exponentially when n increases. Similarly, the running time of both operations will be nearly the same if n is significantly small.
+
+Usually, the time required by an algorithm falls under three types −
+
+Best Case − Minimum time required for program execution.
+
+Average Case − Average time required for program execution.
+
+Worst Case − Maximum time required for program execution.
+
+Asymptotic Notations
+Following are the commonly used asymptotic notations to calculate the running time complexity of an algorithm.
+
+Ο Notation (Worst case)
+Ω Notation (Best case)
+θ Notation (Average case)
 
 ### 17. Search an element 5 in the array X=(5,2,4,7,1,3,2,6)
 Ans. 
