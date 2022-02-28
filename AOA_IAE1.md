@@ -163,7 +163,7 @@ Following are the commonly used asymptotic notations to calculate the running ti
 θ Notation (Average case)
 
 ### 17. Search an element 5 in the array X=(5,2,4,7,1,3,2,6)
-Ans. 
+Ans. ![answer 17](https://github.com/drocgoesongit/answers/blob/main/Assets/17%20ans%20AOA.jpeg)
 
 ### 18. Using Master Theorem calculate time complexity of
 > a. T[n]=2T[n/2] + n
