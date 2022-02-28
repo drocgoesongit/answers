@@ -1,4 +1,4 @@
-# DBMS IAE1 SEM IV 
+# MP IAE1 SEM IV 
 ## Question bank solutions
 <br>
 
