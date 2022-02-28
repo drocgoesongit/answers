@@ -173,16 +173,82 @@ Ans.
 Ans. 
 ### 19. Write an Algorithm for finding out the maximum and minimum number in the array using divide and conquer.
 Ans.
+
+a. Let P = (n, a [i],……,a [j]) denote an arbitrary instance of the problem.
+b. Here ‘n’ is the no. of elements in the list (a [i],….,a[j]) and we are interested in finding the maximum and minimum of the list.
+c. If the list has more than 2 elements, P has to be divided into smaller instances.
+d. For example, we might divide ‘P’ into the 2 instances, P1=([n/2],a[1],……..a[n/2]) & P2= ( n-[n/2], a[[n/2]+1],….., a[n]) After having divided ‘P’ into 2 smaller sub problems, we can solve them by recursively invoking the same divide-and-conquer algorithm.
+ 
+![image](https://user-images.githubusercontent.com/90335734/156029560-191f06d7-155b-45f5-8299-f9fa93406f18.png)
+
 ### 20. Analyze merge sort and apply it to get ascending order of an array X=(5,2,4,7,1,3,2,6)
 Ans.
+
+X=(5,2,4,7,1,3,2,6)
+Analysis:
+![image](https://user-images.githubusercontent.com/90335734/156029614-e5d6b36c-0799-4c80-99bb-f20afaab03f7.png)
+
+Ascending order of an array X=(5,2,4,7,1,3,2,6):
+![image](https://user-images.githubusercontent.com/90335734/156029656-f32a6035-8a47-4063-8017-835114a1977c.png)
+
 ### 21. Analyze quick sort Algorithm and apply it to get ascending order of an Array X=(5,2,4,7,1,3,2,6)
 Ans.
+
+Analysis of QuickSort :
+Time taken by QuickSort, in general, can be written as following. 
+ T(n) = T(k) + T(n-k-1) +  (n)
+The first two terms are for two recursive calls, the last term is for the partition process. k is the number of elements which are smaller than pivot. 
+The time taken by QuickSort depends upon the input array and partition strategy. Following are three cases.
+ 
+Worst Case: The worst case occurs when the partition process always picks greatest or smallest element as pivot. If in the partition strategy where last element is always picked as pivot, the worst case would occur when the array is already sorted in increasing or decreasing order. Following is recurrence for worst case. 
+ 
+ T(n) = T(0) + T(n-1) +  θ(n)
+
+which is equivalent to  
+
+T(n) = T(n-1) + θ(n)
+ 
+The solution of above recurrence is  θ(n2).
+
+Best Case: The best case occurs when the partition process always picks the middle element as pivot. Following is recurrence for best case. 
+ 
+ T(n) = 2T(n/2) + θ(n)
+ 
+The solution of above recurrence is θ(nLogn). It can be solved using case 2 of Master Theorem.
+ 
+Average Case: 
+To do average case analysis, we need to consider all possible permutation of array and calculate time taken by every permutation which doesn’t look easy. 
+We can get an idea of average case by considering the case when partition puts O(n/9) elements in one set and O(9n/10) elements in other set. Following is recurrence for this case. 
+ 
+ T(n) = T(n/9) + T(9n/10) + θ(n)
+ 
+Solution of above recurrence is also O(nLogn)
+
+Ascending order of an array X=(5,2,4,7,1,3,2,6):
+![image](https://user-images.githubusercontent.com/90335734/156029780-884d9fa5-dca4-4665-949a-c423844963ea.png)
+
+
 ### 22. Explain with an example of how divide and conquer strategy is used in binary search?
 Ans.
+
+Binary search is an efficient searching method. While searching the elements using this method the most essential thing that the elements in the array should be sorted one.
+An element which is to be searched from the list of elements stored in array A[0…n-1] is called KEY element.
+Let A[m] be the mid element of array A. then there are three conditions that needs to be tested while searching the array using this method.
+1.	If KEY=A[m] then desired element is present in the list.
+2.	Otherwise if KEY<a[m] then="" search="" the="" left="" sub="" list.<="" p="">
+3.	Otherwise if KEY>A[m] then search the right sub list.
+This can be represented as
+![image](https://user-images.githubusercontent.com/90335734/156029828-bbbf2de2-ac8d-45fc-b451-4b48d49c4f12.png)
+
+Example
+![image](https://user-images.githubusercontent.com/90335734/156029848-bc274ee4-5b20-4c2e-b5f7-4d6f011aacae.png)
+
 ### 23. Arrange the following time functions in ascending order :n, 2n , log(n), n3 ,n2 , n log(n)
-Ans.
+Ans. Ascending order: log(n), n, n log(n), n2, n3, 2n
 ### 24. Compute complexities using O(Big_oh) ,omega and theta notation, for the function 
 > a) T[n]=5 
 > b) T[n]=10 n2+2n+5
 > c) T[n]=2T[n/2] + n3 d) T[n]=T[n-1]+1
 Ans.
+
+![image](https://user-images.githubusercontent.com/90335734/156029908-e67fb5ad-ded9-4e04-a462-55cb9f8af728.png)
