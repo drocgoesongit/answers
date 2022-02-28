@@ -18,12 +18,12 @@ d-Master Method
 ### 2. Explain Greedy approach and it’s applications.
 
 Ans: It simply means to pick up a choice/solution that seems the best at the moment ( being greedy). 
-This technique is best suited when we want an immediate situation. 
-It helps to solve optimization problems 
+This technique is best suited when we want an immediate solution. 
+It helps to solve optimization problems \
 i.e. which gives either minimum results or maximum results.
-A solution satisfying the condition in the problem is a feasible solution.
+A solution satisfying the condition in the problem is a feasible solution.\
 The solution having minimum cost out of all possible feasible solutions is the optimal solution i.e. it is the best solution.
-The goal of the greedy algorithm is to find the optimal solution. There can be only 1 optimal solution.
+The goal of the greedy algorithm is to find the optimal solution. There can be only 1 optimal solution.\
 Application: CPU Scheduling algorithms, Minimum spanning trees,  Fit algorithm in memory management
 
 ### 3. Explain the basic principle of Divide and Conquer method and its applications.
