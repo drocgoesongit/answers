@@ -93,19 +93,53 @@ But logically, database architecture is of two types like: 2-tier architecture a
 1-Tier Architecture\
 In this architecture, the database is directly available to the user. It means the user can directly sit on the DBMS and uses it.
 2-Tier Architecture\
-The 2-Tier architecture is same as basic client-server. In the two-tier architecture, applications on the client end can directly communicate with the database at the server side. For this interaction, API's like: ODBC, JDBC are used.
+The 2-Tier architecture is same as basic client-server. In the two-tier architecture, applications on the client end can directly communicate with the database at the server side. For this interaction, API's like: ODBC, JDBC are used.\
 ![2 Tier](https://static.javatpoint.com/dbms/images/dbms-2-tier-architecture.png)
 <br>
 3-Tier Architecture\
 The 3-Tier architecture contains another layer between the client and server. In this architecture, client can't directly communicate with the server.\
 ![3 Tier](https://static.javatpoint.com/dbms/images/dbms-3-tier-architecture.png)
 
-### 8.Explain Specialization,generalization with example.
-Ans. 
+### 8. Explain Specialization,generalization with example.
+Ans. **Specialization and Generalization**\
+Generalization is a process of generalizing an entity which contains generalized attributes or properties of generalized entities.
+It is a Bottom up process i.e. consider we have 3 sub entities Car, Truck and Motorcycle. Now these three entities can be generalized into one super class named as Vehicle.\
+Specialization is a process of identifying subsets of an entity that share some different characteristic. It is a top down approach in which one entity is broken down into low level entity.\
+In above example Vehicle entity can be a Car, Truck or Motorcycle.
+
 ### 9.Explain different types of attribute of an entity with example.
-Ans. 
+Ans. There are five such types of attributes: Simple, Composite, Single-valued, Multi-valued, and Derived attribute. One more attribute is their, i.e. Complex Attribute, this is the rarely used attribute. 
+
+**Simple attribute :** 
+An attribute that cannot be further subdivided into components is a simple attribute. 
+Example: The roll number of a student, the id number of an employee. 
+
+**Composite attribute :**
+An attribute that can be split into components is a composite attribute. 
+
+Example: The address can be further split into house number, street number, city, state, country, and pin code, the name can also be split into first name middle name, and last name. 
+
+**Single-valued attribute : **
+The attribute which takes up only a single value for each entity instance is a single-valued attribute. 
+
+Example: The age of a student. 
+
+Multi-valued attribute : 
+The attribute which takes up more than a single value for each entity instance is a multi-valued attribute. 
+
+Example: Phone number of a student: Landline and mobile. 
+
+Derived attribute : 
+An attribute that can be derived from other attributes is derived attributes. 
+
+Example: Total and average marks of a student. 
+
+Complex attribute : 
+Those attributes, which can be formed by the nesting of composite and multi-valued attributes, are called “Complex                 Attributes“. These attributes are rarely used in DBMS(DataBase Management System). That’s why they are not so popular.
+
 ### 10. Explain following relational algebra operations with suitable examples.
      A.Union    B. Cartesian product   C.Selection     D.Projection
+Ans.
 ### 11 What are different types of entities. Differentiate between them. 
 ### 12.Differentiate between file system and database system.
 ### 13.What do you mean by data abstraction and data independence in DBMS.
