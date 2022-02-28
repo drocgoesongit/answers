@@ -91,7 +91,7 @@ In the tables, one attribute, you can see, is common, that is Stud_Id, but it ha
 Ans. Database architecture can be seen as a single tier or multi-tier.
 But logically, database architecture is of two types like: 2-tier architecture and 3-tier architecture.\
 1-Tier Architecture\
-In this architecture, the database is directly available to the user. It means the user can directly sit on the DBMS and uses it.
+In this architecture, the database is directly available to the user. It means the user can directly sit on the DBMS and uses it.\
 2-Tier Architecture\
 The 2-Tier architecture is same as basic client-server. In the two-tier architecture, applications on the client end can directly communicate with the database at the server side. For this interaction, API's like: ODBC, JDBC are used.\
 ![2 Tier](https://static.javatpoint.com/dbms/images/dbms-2-tier-architecture.png)
@@ -139,8 +139,27 @@ Those attributes, which can be formed by the nesting of composite and multi-valu
 
 ### 10. Explain following relational algebra operations with suitable examples.
      A.Union    B. Cartesian product   C.Selection     D.Projection
-Ans.
+Ans. 1. Select Operation:
+- The select operation selects tuples that satisfy a given predicate.
+- It is denoted by sigma (σ).
+2. Project Operation:
+- This operation shows the list of those attributes that we wish to appear in the result. Rest of the attributes are eliminated from the table.
+- It is denoted by ∏.
+3. Union Operation:
+- Suppose there are two tuples R and S. The union operation contains all the tuples that are either in R or S or both in R & S.
+- It eliminates the duplicate tuples. It is denoted by ∪.
+4. Cartesian product
+- The Cartesian product is used to combine each row in one table with each row in the other table. It is also known as a cross product.
+- It is denoted by X.
 ### 11 What are different types of entities. Differentiate between them. 
+Ans. Two main different types of Entities. Strong Entity and weak Entity.
+| Strong Entity |	Weak Entity |
+| ---- | ---- |
+| 	Strong entity always has a primary key.	|While a weak entity has a partial discriminator key.|
+|	Strong entity is not dependent on any other entity.	|Weak entity depends on strong entity.|
+|	Strong entity is represented by a single rectangle.	|Weak entity is represented by a double rectangle.|
+|	Two strong entity’s relationship is represented by a single diamond.|	While the relation between one strong and one weak entity is represented by a double diamond.|
+|	Strong entities have either total participation or not.	|While weak entity always has total participation.|
 ### 12.Differentiate between file system and database system.
 Ans. 
 | Basis |	File System | DBMS |
@@ -160,4 +179,11 @@ Ans. Database systems comprise complex data-structures. In order to make the sys
 
 There are mainly 3 levels of data abstraction: 
 
-Physical: This is the lowest level of data abstraction. It tells us how the data is actually stored in memory.
+**Physical:** This is the lowest level of data abstraction. It tells us how the data is actually stored in memory.\
+**Logical:** This level comprises the information that is actually stored in the database in the form of tables.\
+**View:** This is the highest level of abstraction. Only a part of the actual database is viewed by the users.\
+<br>
+![image view lever](https://media.geeksforgeeks.org/wp-content/uploads/13-1.png)\
+<br>
+The main purpose of data abstraction is to achieve data independence in order to save time and cost required when the database is modified or altered. 
+Physical level data independence: It refers to the characteristic of being able to modify the physical schema without any alterations to the conceptual or logical schema, done for optimization purposes.
