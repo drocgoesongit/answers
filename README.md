@@ -1,5 +1,5 @@
 # Answers for IAE and preparation docs.
-## _by Nabeel Mirza_ , _Yaseir_
+## _by Nabeel Mirza , Yaseir_ 
 <br>
 
 ## Links of Question Banks Answers:
