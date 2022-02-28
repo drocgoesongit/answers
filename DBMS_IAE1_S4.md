@@ -1,5 +1,9 @@
 # DBMS IAE1 SEM IV
 ## Question Bank Answers
+```
+All the answers of the question banks. If you think there is some error and something needs to be changed. 
+Feel free to submit your pull requests to this repo. We will check and then merge appropriate pull requests.
+```
 <br>
 
 ### 1. What are the mapping rules for converting ER diagram into relational model.
