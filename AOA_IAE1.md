@@ -101,12 +101,50 @@ Ans.
 
 
 ### 10. Explain insertion sort and derive its complexity.
-11. Explain selection sort and derive its complexity.
-12. Explain merge sort and derive its complexity.
-13. Explain quick sort and derive its complexity.
-14. Explain binary search Algorithm and derive its complexity.
-15. What is the framework for the analysis of Algorithms?
-16. What is asymptotic analysis?
-17. Search an element 5 in the array X=(5,2,4,7,1,3,2,6)
-18. Using Master Theorem calculate time complexity of
+Ans. The insertion sort algorithm iterates through an input array and removes one element per iteration, finds the place the element belongs in the array, and then places it there. This process grows a sorted list from left to right.\
+**Best Case Analysis:**\
+Insertion sort performs two operations: it scans through the list, comparing each pair of elements, and it swaps elements if they are out of order. Each operation contributes to the running time of the algorithm. If the input array is already in sorted order, insertion sort compares O(n)O(n) elements and performs no swaps (in the Python code above, the inner loop is never triggered). Therefore, in the best case, insertion sort runs in O(n)O(n) time.\
+**Worst and Average Case Analysis:**\
+The worst case for insertion sort will occur when the input list is in decreasing order. To insert the last element, we need at most n-1n−1 comparisons and at most n-1n−1 swaps. To insert the second to last element, we need at most n-2n−2 comparisons and at most n-2n−2 swaps, and so on.[3] The number of operations needed to perform insertion sort is therefore: 2 \times (1+2+ \dots +n-2+n-1)2×(1+2+⋯+n−2+n−1).  As expected, the algorithm's complexity is O(n^2). So insertion sort, on average, takes O(n^2) time.
+
+### 11. Explain merge sort and derive its complexity.
+Ans. In Merge Sort, the given unsorted array with n elements, is divided into n subarrays, each having one element, because a single element is always sorted in itself. Then, it repeatedly merges these subarrays, to produce new sorted subarrays, and in the end, one complete sorted array is produced.\
+whenever we divide a number into half in every step, it can be represented using a logarithmic function, which is log n and the number of steps can be represented by log n + 1(at most)\
+Also, we perform a single step operation to find out the middle of any subarray, i.e. O(1).\
+And to merge the subarrays, made by dividing the original array of n elements, a running time of O(n) will be required.\
+Hence the total time for mergeSort function will become n(log n + 1), which gives us a time complexity of O(n*log n).\
+Worst Case Time Complexity [ Big-O ]: O(n*log n)\
+Best Case Time Complexity [Big-omega]: O(n*log n)\
+Average Time Complexity [Big-theta]: O(n*log n)
+
+### 12. Explain selection sort and derive its complexity.
+Ans. With each loop cycle,
+The minimum element in unsorted sub-array is selected.
+It is then placed at the correct location in the sorted sub-array until array A is completely sorted.\
+Time Complexity Analysis-\
+Selection sort algorithm consists of two nested loops.
+Owing to the two nested loops, it has O(n2) time complexity.
+Space Complexity Analysis-\
+Selection sort is an in-place algorithm.
+It performs all computation in the original array and no other array is used.
+Hence, the space complexity works out to be O(1).
+
+### 13. Explain quick sort and derive its complexity.
+Ans. Quick sort is a highly efficient sorting algorithm and is based on partitioning of array of data into smaller arrays. A large array is partitioned into two arrays one of which holds values smaller than the specified value, say pivot, based on which the partition is made and another array holds values greater than the pivot value.
+
+
+### 14. Explain binary search Algorithm and derive its complexity.
+Ans. A binary search algorithm works on the idea of neglecting half of the list on every iteration. It keeps on splitting the list until it finds the value it is looking for in a given list. A binary search algorithm is a quick upgrade to a simple linear search algorithm.\
+The time complexity of the binary search algorithm is O(log n). The best-case time complexity would be O(1) when the central index would directly match the desired value. The worst-case scenario could be the values at either extremity of the list or values not in the list. 
+
+### 15. What is the framework for the analysis of Algorithms?
+Ans. 
+
+### 16. What is asymptotic analysis?
+Ans. 
+
+### 17. Search an element 5 in the array X=(5,2,4,7,1,3,2,6)
+Ans. 
+
+### 18. Using Master Theorem calculate time complexity of
 a. T[n]=2T[n/2] + n
