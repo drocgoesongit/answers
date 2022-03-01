@@ -121,6 +121,7 @@ ANS  --> Example of Round-robin Scheduling
 ### 14. Write a short note on FCFS scheduling policy.
 
   ANS -->
+  ( for 3 ques mentioned above)
    ![image](https://user-images.githubusercontent.com/76240365/156189100-3dae0995-cd99-497c-90e5-01a51923c1a1.png)
 
 ### 15. Arrival Time and Burst time for three processes P1, P2, P3 are given in  the diagram below. Calculate Turn around time, completion time, and  waiting time.
