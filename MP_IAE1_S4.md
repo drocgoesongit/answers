@@ -19,7 +19,7 @@
 ### 2.Explain flag register or PSW of 8086.
 
     ANS --> 
-      ![image](https://user-images.githubusercontent.com/76240365/156193505-34ff87d2-409f-48df-af74-33ede5b54dcf.png)
+   ![image](https://user-images.githubusercontent.com/76240365/156193505-34ff87d2-409f-48df-af74-33ede5b54dcf.png)
 
 ### 3.Describe following pins.
 LOCK, HOLD..RQ0/GTO, INTR, B1-1E/S7, TEST,READY, RESET, NMI.
@@ -50,7 +50,7 @@ AAS, DAA, AAD, CWD, SHL, RCR, NOP, STD
   ANS -->
 
 
-    ![image](https://user-images.githubusercontent.com/76240365/156196228-baa5bdc6-f460-4a5f-bc17-033d215c1c5d.png)
-    ![image](https://user-images.githubusercontent.com/76240365/156195893-19879dfc-04f5-46bc-8b16-391288dfea6e.png)
-    ![image](https://user-images.githubusercontent.com/76240365/156196002-cc6f50a3-e5da-4b17-bff2-91f4bd218e16.png)
+   ![image](https://user-images.githubusercontent.com/76240365/156196228-baa5bdc6-f460-4a5f-bc17-033d215c1c5d.png)
+   ![image](https://user-images.githubusercontent.com/76240365/156195893-19879dfc-04f5-46bc-8b16-391288dfea6e.png)
+   ![image](https://user-images.githubusercontent.com/76240365/156196002-cc6f50a3-e5da-4b17-bff2-91f4bd218e16.png)
 
