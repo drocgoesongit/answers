@@ -5,14 +5,14 @@
 ### 1.Explain advantages of memory segmentation.
   ANS -->
     
-      Segmentation is the process in which the main memory of the computer is logically divided into different segments and each segment has its own base address. It is basically used to enhance the speed of execution of the computer system, so that the processor is able to fetch and execute the data from the memory easily and fast.
-     Advantages of the Segmentation The main advantages of segmentation are as follows:
-    It provides a powerful memory management mechanism.
-    Data related or stack related operations can be performed in different segments.
-    Code related operation can be done in separate code segments.
-    It allows to processes to easily share data.
-    It allows to extend the address ability of the processor, i.e. segmentation allows the use of 16 bit registers to give an addressing capability of 1 Megabytes. Without segmentation, it would require 20 bit registers.
-    It is possible to enhance the memory size of code data or stack segments beyond 64 KB by allotting more than one segment for each area. 
+Segmentation is the process in which the main memory of the computer is logically divided into different segments and each segment has its own base address. It is basically used to enhance the speed of execution of the computer system, so that the processor is able to fetch and execute the data from the memory easily and fast.
+   Advantages of the Segmentation The main advantages of segmentation are as follows:
+  It provides a powerful memory management mechanism.
+  Data related or stack related operations can be performed in different segments.
+  Code related operation can be done in separate code segments.
+  It allows to processes to easily share data.
+  It allows to extend the address ability of the processor, i.e. segmentation allows the use of 16 bit registers to give an addressing capability of 1 Megabytes. Without segmentation, it would require 20 bit registers.
+  It is possible to enhance the memory size of code data or stack segments beyond 64 KB by allotting more than one segment for each area. 
 
         
         
@@ -28,7 +28,23 @@ LOCK, HOLD..RQ0/GTO, INTR, B1-1E/S7, TEST,READY, RESET, NMI.
 ### 5.Explain absolute and Partial decoding techniques.
 ### 6.Advantages and Disadvantages of DRAM.
 ### 7.WAP and draw a flowchart to add two 16- bit numbers and store the result in memory location 2309.
+  ANS -->
+  
+            MOV CX, 0000
+            MOV AX, AA22H
+            MOV BX, BB34H
+            ADD AX, BX
+            JNC STORE
+            INC CX
+    STORE:  MOV [2309] AX
+            MOV [230B] CX
+        
+![image](https://user-images.githubusercontent.com/76240365/156200705-0381687a-d1d7-4d7a-a275-0d292e6602eb.png)
+
+    
 ### 8.WAP to find factorial of a given number.
+
+
 ### 9.Draw 8086 minimum mode microprocessor based system
 ### 10.Draw 8086 maximum mode microprocessor based system
 ### 11.Explain addressing modes of 8086 microprocessor.
@@ -39,10 +55,12 @@ LOCK, HOLD..RQ0/GTO, INTR, B1-1E/S7, TEST,READY, RESET, NMI.
 MUL source, DIV source
 AAS, DAA, AAD, CWD, SHL, RCR, NOP, STD
 ### 16.Explain Features of 8086
+    ANS -->
+   ![image](https://user-images.githubusercontent.com/76240365/156198697-59c3754a-89a1-4b5b-9751-ee96b1f37d7f.png)
+
 ### 17.Significance of Instruction Queue.
     ANS --> 
-    
-      ![image](https://user-images.githubusercontent.com/76240365/156196518-4cad982f-93c7-44ec-9297-64d7a0fcbeff.png)
+   ![image](https://user-images.githubusercontent.com/76240365/156196518-4cad982f-93c7-44ec-9297-64d7a0fcbeff.png)
 
 ### 18.WAP to translate a BCD number to 7 segment code
 ### 19.What is stack, Explain the instructions related to stack.
