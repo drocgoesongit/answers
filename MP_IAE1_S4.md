@@ -136,6 +136,12 @@ AAS, DAA, AAD, CWD, SHL, RCR, NOP, STD
 
 ### 18.WAP to translate a BCD number to 7 segment code
 ### 19.What is stack, Explain the instructions related to stack.
+Ans. 
+**Stack:**
+The stack is a LIFO (last in, first out) data structure implemented in the RAM area and is used to store addresses and data when the microprocessor branches to a subroutine. Then the return address used to get pushed on this stack. Also to swap values of two registers and register pairs we use the stack as well.\
+
+There are two more special purpose registers, each of 16-bit width. They are the stack pointer, SP, and the program counter, PC. The Stack Pointer register will hold the address of the top location of the stack.\
+SP is a special purpose 16-bit register. It contains a memory address. PUSH and POP. In case of PUSH operation, the SP register gets decreased by 2 and new data item used to insert on to the top of the stack. On the other hand, in case of POP operation, the data item will have to be deleted from the top of the stack and the SP register will get increased by the value of 2.\
 ### 20.Explain BIU and EU in detail
   ANS -->
 
