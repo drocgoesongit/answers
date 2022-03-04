@@ -48,9 +48,81 @@ LOCK, HOLD..RQ0/GTO, INTR, B1-1E/S7, TEST,READY, RESET, NMI.
 ### 9.Draw 8086 minimum mode microprocessor based system
 ### 10.Draw 8086 maximum mode microprocessor based system
 ### 11.Explain addressing modes of 8086 microprocessor.
+Ans. 
+**Addressing modes in 8086 microprocessor**
+The way of specifying data to be operated by an instruction is known as addressing modes. This specifies that the given data is an immediate data or an address. It also specifies whether the given operand is register or register pair.
+
+Types of addressing modes:
+
+Register mode – In this type of addressing mode both the operands are registers.
+Example:
+MOV AX, BX
+XOR AX, DX
+ADD AL, BL\
+Immediate mode – In this type of addressing mode the source operand is a 8 bit or 16 bit data. Destination operand can never be immediate data.
+Example:
+MOV AX, 2000
+MOV CL, 0A
+ADD AL, 45
+AND AX, 0000
+Note that to initialize the value of segment register an register is required.
+
+MOV AX, 2000
+MOV CS, AX \
+Displacement or direct mode – In this type of addressing mode the effective address is directly given in the instruction as displacement.
+Example:
+MOV AX, [DISP]
+MOV AX, [0500]\
+Register indirect mode – In this addressing mode the effective address is in SI, DI or BX.
+Example: Physical Address = Segment Address + Effective Address
+MOV AX, [DI]
+ADD AL, [BX]
+MOV AX, [SI] \
+Based indexed mode – In this the effective address is sum of base register and index register.
+Base register: BX, BP
+Index register: SI, DI 
+The physical memory address is calculated according to the base register.
+Example:
+
+MOV AL, [BP+SI]
+MOV AX, [BX+DI]\
+Indexed mode – In this type of addressing mode the effective address is sum of index register and displacement.
+Example:
+MOV AX, [SI+2000]
+MOV AL, [DI+3000]\
+Based mode – In this the effective address is the sum of base register and displacement.
+Example:
+MOV AL, [BP+ 0100]\
+Based indexed displacement mode – In this type of addressing mode the effective address is the sum of index register, base register and displacement.
+Example:
+MOV AL, [SI+BP+2000] \
+String mode – This addressing mode is related to string instructions. In this the value of SI and DI are auto incremented and decremented depending upon the value of directional flag.
+Example:
+MOVS B
+MOVS W \
+Input/Output mode – This addressing mode is related with input output operations.
+Example:
+IN A, 45
+OUT A, 50 \
+Relative mode –
+In this the effective address is calculated with reference to instruction pointer.
+Example:
+JNZ 8 bit address
+IP=IP+8 bit address 
 ### 12.Draw Timing diagram for read and write operation in minimum mode.
 ### 13.Draw Timing diagram for read and write operation in maximum mode.
 ### 14.Explain interrupts of 8086.
+Ans.
+Interrupt is the method of creating a temporary halt during program execution and allows peripheral devices to access the microprocessor. The microprocessor responds to that interrupt with an ISR (Interrupt Service Routine), which is a short program to instruct the microprocessor on how to handle the interrupt.
+
+The following image shows the types of interrupts we have in a 8086 microprocessor.\
+![reference image](https://www.tutorialspoint.com/microprocessor/images/interrupts.jpg)\
+**Hardware Interrupts**
+Hardware interrupt is caused by any peripheral device by sending a signal through a specified pin to the microprocessor.
+
+The 8086 has two hardware interrupt pins, i.e. NMI and INTR. NMI is a non-maskable interrupt and INTR is a maskable interrupt having lower priority. One more interrupt pin associated is INTA called interrupt acknowledge.\
+**Software Interrupts**
+Some instructions are inserted at the desired position into the program to create interrupts. These interrupt instructions can be used to test the working of various interrupt handlers.
 ### 15.Explain following instructions in detail with example MOV dest, source,
 MUL source, DIV source
 AAS, DAA, AAD, CWD, SHL, RCR, NOP, STD
