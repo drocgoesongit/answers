@@ -27,6 +27,17 @@ LOCK, HOLD..RQ0/GTO, INTR, B1-1E/S7, TEST,READY, RESET, NMI.
 .MODEL, DUP operator, END, EQU,ORG, .CODE, .STACK
 ### 5.Explain absolute and Partial decoding techniques.
 ### 6.Advantages and Disadvantages of DRAM.
+Ans. 
+**Advantages**
+Very dense
+Low cost per bit
+Simple memory cell structure
+**Disadvantages**
+Complex manufacturing process
+Date requires refreshing
+More complex enternal circuitry required (read and refresh periodically)
+Volatile memory
+Relatively slow operational speed
 ### 7.WAP and draw a flowchart to add two 16- bit numbers and store the result in memory location 2309.
   ANS -->
   
