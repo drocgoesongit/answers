@@ -26,18 +26,27 @@ LOCK, HOLD..RQ0/GTO, INTR, B1-1E/S7, TEST,READY, RESET, NMI.
 ### 4.Explain 2 Assembler directives.
 .MODEL, DUP operator, END, EQU,ORG, .CODE, .STACK
 ### 5.Explain absolute and Partial decoding techniques.
+Ans. 
+**ABSOLUTE DECODING**\
+The decoding in which all available address line (16 lines in memory mapped and 8 lines in
+peripheral mapping) are used for decoding to generate a unquie address is called absolute.\
+**Partial Decoding**\
+The decoding in which all available address line(16 lines in memory mapping and 8 lines in
+peripheral mapping) are not used for decoding resulting in multiple address for same port is
+called partial decoding.
 ### 6.Advantages and Disadvantages of DRAM.
 Ans. 
-**Advantages**
-Very dense
-Low cost per bit
-Simple memory cell structure
-**Disadvantages**
-Complex manufacturing process
-Date requires refreshing
-More complex enternal circuitry required (read and refresh periodically)
-Volatile memory
-Relatively slow operational speed
+**Advantages**\
+Very dense\
+Low cost per bit\
+Simple memory cell structure\
+**Disadvantages**\
+Complex manufacturing process\
+Date requires refreshing\
+More complex enternal circuitry required (read and refresh periodically)\
+Volatile memory\
+Relatively slow operational speed\
+
 ### 7.WAP and draw a flowchart to add two 16- bit numbers and store the result in memory location 2309.
   ANS -->
   
