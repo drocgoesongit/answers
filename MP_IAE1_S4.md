@@ -21,10 +21,65 @@ Segmentation is the process in which the main memory of the computer is logicall
     ANS --> 
    ![image](https://user-images.githubusercontent.com/76240365/156193505-34ff87d2-409f-48df-af74-33ede5b54dcf.png)
 
-### 3.Describe following pins.
-LOCK, HOLD..RQ0/GTO, INTR, B1-1E/S7, TEST,READY, RESET, NMI.
+### 3.Describe following pins. LOCK, HOLD..RQ0/GTO, INTR, B1-1E/S7, TEST,READY, RESET, NMI.
+Ans.
+ LOCK
+    When this signal is active, it indicates to the other processors not to ask the CPU to leave the system bus. It is activated using the LOCK prefix on any instruction and is available at pin 29.
+
+   HOLD
+    This signal indicates to the processor that external devices are requesting to access the address/data buses. It is available at pin 31.
+
+   RQ/GT1 and RQ/GT0
+    These are the Request/Grant signals used by the other processors requesting the CPU to release the system bus. When the signal is received by CPU, then it sends acknowledgment. RQ/GT0 has a higher priority than RQ/GT1.
+
+   INTR
+     It is available at pin 18. It is an interrupt request signal, which is sampled during the last clock cycle of each instruction to determine if the processor considered this as an interrupt or not.
+
+   S7/BHE
+    BHE stands for Bus High Enable. It is available at pin 34 and used to indicate the transfer of data using data bus D8-D15. This signal is low during the first clock cycle, thereafter it is active. 
+
+   TEST(bar)
+    TEST pin is examined by the "WAIT" instruction. If the TEST pin is Low, execution continues. Otherwise the processor waits in an "idle" state. This input is synchronized internally during each clock cycle on the leading edge of CLK. 
+
+   Ready
+    It is available at pin 22. It is an acknowledgement signal from I/O devices that data is transferred. It is an active high signal. When it is high, it indicates that the device is ready to transfer data. When it is low, it indicates wait state. 
+
+   RESET
+    It is available at pin 21 and is used to restart the execution. It causes the processor to immediately terminate its present activity. This signal is active high for the first 4 clock cycles to RESET the microprocessor.
+
+   NMI
+   It stands for non-maskable interrupt and is available at pin 17. It is an edge triggered input, which causes an interrupt request to the microprocessor. 
+
 ### 4.Explain 2 Assembler directives.
 .MODEL, DUP operator, END, EQU,ORG, .CODE, .STACK
+ ANS.
+    .MODEL
+      Initializes the program memory model.
+
+   DUP OPERATORS
+    The DUP operator is very often used in the declaration of arrays This operator works with any of the data allocation directives.
+	  e.g. -->        4 DUP(2)  --> is equivalent to 2, 2, 2, 2
+
+  END
+    Every assembly language source file must end with END on a line by itself.
+
+  EQU
+    we use EQU to define constants. This is similar to the use of #define to define a constant in C.
+
+  ORG
+    ORG means origin ORG is used for specific addressing in microprocessor and microcontroller programming.
+    For example:
+    .org 0000H
+    This means we want to start our program from the 0000H address.
+
+   DATA
+    The data section is used for declaring initialized data or constants. 
+
+   STACK
+     defines a stack segment (with segment name STACK). The optional size specifies the number of bytes for the stack (default 1,024). The .STACK              directive              automatically closes the stack statement.
+
+   CODE
+       indicates the start of a code segment.
 ### 5.Explain absolute and Partial decoding techniques.
 Ans. 
 **ABSOLUTE DECODING**\
@@ -63,10 +118,18 @@ Relatively slow operational speed\
 
     
 ### 8.WAP to find factorial of a given number.
+ ANS.\
+   ![image](https://user-images.githubusercontent.com/76240365/156820027-a4d44978-1a55-45d9-bfaf-a776d3aab3a4.png)
+
 
 
 ### 9.Draw 8086 minimum mode microprocessor based system
+   ANS.\
+   ![Minimum-Mode-Configuration-of-8086-1](https://user-images.githubusercontent.com/76240365/156820256-6cf1d9a0-c3dd-4e2b-9d2e-ce7154458ad3.jpg)
+
 ### 10.Draw 8086 maximum mode microprocessor based system
+   ANS.\
+    ![Untitleddrawing17](https://user-images.githubusercontent.com/76240365/156820458-66202fbb-7951-4cf2-9099-4e929d1ddd9a.png)
 ### 11.Explain addressing modes of 8086 microprocessor.
 Ans. 
 **Addressing modes in 8086 microprocessor**
