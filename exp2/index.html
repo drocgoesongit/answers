@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginForm</title>
+    <style>
+        body{
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+        }
+        .card{
+            border-radius: 1rem;
+            background-color: bisque;
+            text-align: center;
+            height: 350px;
+            width: 300px;
+            letter-spacing: 2px;
+            box-shadow: 6px 6px #888888;
+
+        }
+        .textfield{
+            width: 90%;
+            border-width: 3px;
+            border-color: black;
+            border-radius: 10rem;
+        }
+        .btn{
+            height: 30px;
+            width: 60%;
+            border-radius: 2rem;
+            color: whitesmoke;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Login Form</h1>
+    <form action="loginvalidate.php" style="line-height: 2;" method="post">
+        <label for="">User ID</label>
+        <input type="text" id="userid" class="textfield" name="userid">
+        <br>
+        <label for="">Password</label>
+        <input type="password" id="password" class="textfield" name="login_password">
+        <br>
+        <input type="submit" name="submit_button" id="submit_button" class="btn">
+        <button class="btn">Reset</button>
+    </form>
+    </div>
+    
+</body>
+</html>

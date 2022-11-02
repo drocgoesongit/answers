@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+          function getdata(){
+
+            fetch('http://localhost/WebComputingLab/exp4/fetch.php ')
+                .then((response) => {
+                   return response.json();
+
+                    })
+               .then((data) => {
+                  console.log(data);
+                  for(var x in data){
+  document.write("<table><tr><td>"+`${data[x].bookid}`+"</td>");  
+  document.write("<td>"+`${data[x].title}`+"</td>");
+  document.write("<td>"+`${data[x].price}`+"</td></tr></table>");
+}
+  })
+  .catch((error) => {
+    console.error(error)
+  })
+        }
+        </script>
+    </head>
+    <body>
+<button onclick="getdata()">Get Data</button>
+    </body>
+</html>
+
+
