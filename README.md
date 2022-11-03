@@ -2,6 +2,7 @@
 
 ## EXP 6
 
+```
 import Card from './components/card';
 function App() {
  return (
@@ -37,7 +38,7 @@ img="https://tse1.mm.bing.net/th?id=OIP.txPHKNxDsd3SIrtUI0hCBwHaEK&pid=Api&P=0
  );
 }
 export default App;
-
+```
 
 ## Exp 9
 
