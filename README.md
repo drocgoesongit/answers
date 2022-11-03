@@ -1,5 +1,44 @@
 # W C
 
+## EXP 6
+
+import Card from './components/card';
+function App() {
+ return (
+ <div className="App">
+ <div className='cards'>
+ <Card
+ name="Cristiano Ronaldo"
+ img="https://tse4.mm.bing.net/th?id=OIP.PgiawtaIidxaUARoWZmegHaEK&pid=Api&P=0"
+ country="Portugal"
+ club="Manchester United"
+ pos="ST"
+ /> 
+ <Card
+ name="Erling Haaland"
+ img="https://tse3.mm.bing.net/th?id=OIP.-
+8aZYyDJpOv8qzFs0CM4QgHaD4&pid=Api&P=0"
+ country="Norway"
+ club="Manchester City"
+ pos="ST"
+ />
+ <Card
+ name="Mohammad Salah"
+ 
+img="https://tse1.mm.bing.net/th?id=OIP.txPHKNxDsd3SIrtUI0hCBwHaEK&pid=Api&P=0
+"
+ country="Egypt"
+ club="Liverpool"
+ pos="RWF"
+ />
+ </div>
+ 
+ </div>
+ );
+}
+export default App;
+
+
 ## Exp 9
 
 steps
