@@ -1,5 +1,9 @@
 # D W M
 
+## EXP 3
+-->
+data : weather.nominal && weather
+
 ## EXP 4
 -->
 data : iris.csv
